@@ -1,0 +1,55 @@
+.subscribe {
+    &__title {
+        font-size: 34px;
+        color: $title-color;
+        padding-top: 130px;
+    }
+
+    &__text {
+        line-height: 32px;
+
+        @media (max-width: $mobile) {
+            padding: 0 20px;
+        }
+    }
+
+    &__wrap {
+        margin-bottom: 70px;
+
+        @media (max-width: $mobile) {
+            margin-bottom: 10px;
+        }
+    }
+    
+    &__img {
+        padding-top: 120px;
+    }
+
+    &__title-mobile {
+        @media (max-width: $mobile) {
+            padding-top: 0;
+            order: 2;
+
+            .subscribe__title {
+                padding-top: 30px;
+                font-size: 26px;
+            }
+        }
+    }
+
+    &__text-mobile {
+        @media (max-width: $mobile) {
+            order: 3;
+        }
+    }
+
+    &__logo-mobile {
+        @media (max-width: $mobile) {
+            order: 1;
+
+            .subscribe__img {
+                padding-top: 50px;
+            }
+        }
+    }
+}

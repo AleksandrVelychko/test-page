@@ -1,0 +1,20 @@
+// Base
+@import "base/_variables";
+@import "base/_mixins";
+@import "base/_reset";
+
+// Layout
+@import "layout/_general";
+@import "layout/_fonts";
+@import "layout/_tech-desc";
+@import "layout/_standarts";
+@import "layout/_temp";
+@import "layout/_benefits";
+@import "layout/_characteristic";
+@import "layout/_slider";
+@import "layout/_subscribe";
+@import "layout/_button";
+
+// Page styles
+@import "modules/_header";
+@import "modules/_footer";

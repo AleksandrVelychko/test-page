@@ -1,0 +1,42 @@
+.footer {
+    border-top: 2px solid #EEF0F4;
+    padding: 50px 0;
+
+    &__title {
+        color: #A3ADBA;
+        margin-bottom: 20px;
+
+        @media (max-width: $mobile) {
+            padding-top: 25px;
+        }
+    }
+
+    &__text,
+    &__links {
+        color: #9EABBB;
+        transition: all .3s;
+    }
+
+    &__links--number {
+        color: #45494F;
+    }
+
+    &__links--mail {
+        color: #2E75FF;
+    }
+    
+    &__item {
+        margin-bottom: 20px;
+    }
+}
+
+.item {
+    margin: 0 20px;
+}
+
+.flex-item-2 {
+    margin-left: 100px;
+    @media (max-width: $mobile) {
+        margin-left: 0;
+    }
+}

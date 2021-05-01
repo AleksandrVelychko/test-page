@@ -1,0 +1,49 @@
+.standarts {
+
+    &__img {
+        width: 100%;
+        min-height: 100%;
+    }
+    .standards__row {
+        background-color: #163DA1;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    &__text {
+        color: $text-color;
+        font-size: 17px;
+        line-height: 25px;
+
+
+        @media (max-width: $mobile) {
+            font-size: 16px;
+            line-height: 32px;
+        }
+    }
+
+    .standards__title {
+        color: $text-color;
+        font-weight: 700;
+        letter-spacing: 2.42px;
+        @media (max-width: $mobile) {
+            padding-top: 40px;
+            font-size: 18px;
+        }
+    }
+
+    .container .row> {
+        padding-left: 0;
+    }
+
+    &__block {
+        margin-top: 150px;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+}
+
+body > section.standarts > div > div > div.col-12.col-lg-4 {
+    padding-left: 0;
+    padding-right: 0;
+}

@@ -1,0 +1,37 @@
+.benefits {
+    background-color: #FBFBFC;
+
+    &__title {
+        letter-spacing: 4.42px;
+        font-size: 20px;
+        padding: 40px 0;
+
+        @media (min-width: $mobile) {
+            padding: 50px 0;
+        }
+    }
+
+    &__link {
+        background-color: #fff;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+        transition: all .3s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__item {
+        margin-bottom: 10px;
+    }
+
+    &__img {
+        padding: 25px 40px;
+    }
+
+    &__text {
+        color: #45494F;
+    }
+}

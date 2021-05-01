@@ -1,0 +1,33 @@
+.temp {
+
+    &__title {
+        color: $title-color;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 40px;
+        letter-spacing: 2.42px;
+
+        @media (min-width: $mobile) {
+            font-size: 20px;
+        }
+        @media (max-width: $mobile) {
+            text-align: center;
+        }
+    }
+
+    &__text {
+        line-height: 32px;
+    }
+
+    &__name {
+        @media (max-width: $mobile) {
+            font-style: italic;
+        }
+    }
+
+}
+
+body > section.temp > div > div > div.col-sm-12.col-lg-0 {
+    padding-left: 0;
+    padding-right: 0;
+}

@@ -1,0 +1,42 @@
+.characteristic {
+    background-color: #FBFBFC;
+    margin-bottom: 5px;
+
+    &__block {
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+    }
+
+    &__item {
+        margin-bottom: 40px;
+        line-height: 35px;
+    }
+    
+    &__title {
+        letter-spacing: 4.42px;
+        font-size: 20px;
+
+        @media (min-width: $mobile) {
+            font-size: 28px;
+        }
+    }
+}
+
+.circle {
+    border: 1px solid #000;
+    padding: 8px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    max-width: 10px;
+    max-height: 10px;
+  }
+  
+.circle__number {
+    font-size: 12px;
+  }

@@ -1,0 +1,63 @@
+.btn-primary {
+    color: #fff;
+    background-color: #0045AC;
+    border-color: #FAFBFE;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, .3);
+    width: 70%;
+    border-radius: 12px;
+    font-weight: 500;
+
+    @media (max-width: $mobile) {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    &:hover {
+        border-color: #FAFBFE;
+        .arrow-1 div {
+            width: 115px;
+        }
+    }
+}
+
+.arrow-1 {
+    cursor: pointer;
+    position: relative;
+    width: 80px;
+    height: 50px;
+    // margin: 20px;
+    left: 0;
+}
+.arrow-1 div {
+    position: relative;
+    top: 15px;
+    // width: 100%;
+    width: 90px;
+    height: 2px;
+    background-color: #FAFBFE;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    left:0;
+    transition: all .3s;
+    display: block;
+}
+.arrow-1 div::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    top: -3px;
+    right: -2px;
+    background-color: #FAFBFE;
+    transform: rotate(45deg);
+}
+.arrow-1 div::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    top: 3px;
+    right: -2px;
+    background-color: #FAFBFE;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(-45deg);
+}

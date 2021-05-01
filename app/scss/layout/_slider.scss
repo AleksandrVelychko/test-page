@@ -1,0 +1,127 @@
+.slider {
+    border-bottom: 2px solid #EEF0F4;
+    background-color: #FBFBFC;
+
+    &__title {
+        font-size: 20px;
+        letter-spacing: 4.42px;
+
+        @media (min-width: $mobile) {
+            font-size: 28px;
+        }
+    }
+
+    &__desc {
+        padding-top: 150px;
+        letter-spacing: 2.42px;
+        font-size: 20px;
+        margin-bottom: 0;
+
+        @media (min-width: $mobile) {
+            font-size: 28px;
+            margin-bottom: 50px;
+        }
+        @media (max-width: $mobile) {
+            padding-top: 100px;
+        }
+    }
+
+    &__link {
+        display: block;
+        border-radius: 10px;
+        border: 1px solid #fff;
+        box-shadow: 0 2px 5px 1px rgba(0, 0, 0, .3);
+        color: #FAFBFE;
+        padding: 15px 0;
+        margin: 0 -7px 10px;
+        background: #0045AC;
+        transition: all .3s;
+
+        &:hover {
+            // transform: scale(1.1);
+            letter-spacing: 2px;
+            color: #FAFBFE;
+            box-shadow: 0 2px 5px 2px rgba(0, 0, 0, .5);
+        }
+
+        @media (max-width: $mobile) {
+            padding: 20px 0;
+        }
+    }
+
+    &__img {
+        height: 100%;
+
+        @media (max-width: $mobile) {
+            height: auto;
+        }
+    }
+}
+
+.carousel-item {
+    height: 500px;
+
+    @media (max-width: $mobile) {
+        height: 100%;
+    }
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+    background: #fff;
+    opacity: 0.7;
+
+    &:hover {
+       opacity: 1; 
+       box-shadow: 0 0 12px 0 rgba(0, 0, 0, .5);
+    }
+}
+
+.carousel-indicators {
+    bottom: -60px; 
+    
+    @media (min-width: $mobile) {
+        left: 10%;
+    }
+}
+
+.carousel-indicators [data-bs-target]{
+    background-color: #0045AC;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid #80ABFF;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.carousel-control-next-icon {
+    background-image: url('../../images/arrow.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #0045AC; 
+    transform: rotate(180deg);
+}
+
+.carousel-control-prev-icon {
+    background-image: url('../../images/arrow.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #0045AC; 
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 6%;
+    height: 10%;
+    top: 107%;
+    border-radius: 10px;
+}
+
+.carousel-control-next {
+    right: 52%;
+}
+
+.carousel-control-prev {
+    left: 34%;
+}
